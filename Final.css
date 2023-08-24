@@ -1,0 +1,617 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+header{
+    position: fixed;
+    background: #0e9fc7;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+.left_area span{
+    color: #010101;
+}
+
+.sidebar{
+    background: #104654;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left:0;
+    width: 250px;
+    height: 100%
+}
+
+.sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4{
+    color: rgb(255, 255, 255);
+    margin-top:0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: white;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover{
+    background: #19B3D3;
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 560px;
+    font-size: 20px;
+    margin: 5px 0;
+
+    transition: 0.5;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: #19B3D3;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content{
+    background: white;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#check:checked~ .content{
+    margin-left: 60px;
+}
+
+#check{
+    display: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: rgb(230, 230, 230);
+}
+
+section h1{
+    font-size: 3rem;
+}
+
+section p{
+    font-size: 1.5rem;
+}
+
+
+/*------------------------------------------- Start Section Home---------------------------------------------------- */
+#Home{
+    align-items: center;
+}
+.content #Home h1{
+    padding-top: 40px;
+    color: rgb(4, 47, 90);
+    text-shadow: 2px 2px 2px #0e9fc7;
+    text-align: center;
+}
+
+.content #Home p{
+    margin: 0;
+    font-weight: bold;
+    color: rgb(4, 47, 90);
+    text-shadow: 2px 2px 2px #0e9fc7;
+    text-align: center;
+}
+#foodType{
+    margin: 0;
+    width: 20%;
+    height: 30%
+}
+section#Home{
+    background: url("home.png") no-repeat bottom;
+}
+
+section#Managers{
+    background: white;
+}
+
+section#Users{
+    background: rgb(254, 254, 254);
+}
+
+section#About{
+    background: rgb(254, 254, 254);
+}
+ /*----------------------------------- End Section Management---------------------------------------------- */
+
+
+/*------------------------------------ Start Section Managers--------------------------------------------- */
+
+/* -------------------------------------TWO FIRST BORDER ---------------------------------------------------*/
+#Managers1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 40px;
+    display: block;
+}
+
+#Managers1 h1{
+    text-align: center;
+    padding-top: 50px;
+    color: #333;
+    text-shadow: 2px 2px 2px #0e9fc7;
+}
+
+#Managers .title{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    text-shadow: 2px 2px 2px #0e9fc7;
+}
+
+#Managers .ledBorder .led-box{
+    padding-left: 105px;
+}
+
+#Managers1 .borderDisplayAndConfig{
+    color: #333;
+    text-align: center;
+    border: 3px solid #0196e3;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0196e3;
+    float: left;
+    margin-left: 350px;
+}
+
+#Managers1 th{
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+}
+  
+#Managers1 td, #Managers1 th {
+    padding: 10px 40px 10px 50px;
+}
+
+#Managers1 table {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#Managers1 tr:nth-child(even){background-color: #f2f2f2;}
+
+#Managers1 tr:hover {background-color: #ddd;}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    padding-top: 30px;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: rgb(38, 117, 197);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: rgb(38, 117, 197);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgb(151, 187, 225);
+}
+
+.custom-select{
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #08528b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    margin:20px;
+}
+
+.button:hover{
+    color: #010101;
+    background-color: #0b8aaa;
+}
+
+
+
+#Managers1 .drawChart{
+    color: #333;
+    text-align: center;
+    border: 3px solid #0196e3;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0196e3;
+    margin-left: 1050px;
+}
+
+/* -------------------------------------TWO LAST BORDER ------------------------------------------------*/
+#Managers2 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 40px;
+    display: block;
+}
+
+.Managers2 .mb-3{
+    color: #333;
+    text-align: center;
+    border: 3px solid #0196e3;
+    width: 600px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0196e3;
+    float: left;
+    margin-left: 394px; 
+    margin-top:40px;
+}
+
+.Managers2 .FoodBorder{
+    color: #333;
+    text-align: center;
+    border: 3px solid #0196e3;
+    width: 600px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0196e3;
+    margin-left: 1090px;
+    margin-top:40px;
+}  
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(112, 191, 236);
+    color: white;
+}
+
+/*----------------------------------------------------- START LED BLINK ---------------------------------------------*/
+.led-box {
+    height: 30px;
+    width: 25%;
+    margin: 10px 0;
+    float: left;
+}
+
+.led-box p {
+    font-size: 12px;
+    text-align: center;
+    margin: 1em;
+}
+.ledblink{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(164, 165, 221);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #362b7f 0 -1px 9px, rgba(67, 30, 161, 0.5) 0 2px 12px;
+    -webkit-animation: blinkBlue 0.5s infinite;
+    -moz-animation: blinkBlue 0.5s infinite;
+    -ms-animation: blinkBlue 0.5s infinite;
+    -o-animation: blinkBlue 0.5s infinite;
+    animation: blinkBlue 0.5s infinite;
+}
+.ledblue {
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(44, 22, 188);
+    border-radius: 50%; 
+}
+@-webkit-keyframes blinkBlue {
+    from { background-color: rgb(44, 22, 188); }
+    100% { background-color: rgb(7, 11, 123); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #130d84 0 -1px 9px, rgba(11, 11, 140, 0.5) 0 2px 0;}
+    to { background-color: rgb(44, 22, 188);  }
+}
+@-moz-keyframes blinkBlue {
+    from { background-color: rgb(44, 22, 188);  }
+    100% { background-color: rgb(7, 11, 123); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #130d84 0 -1px 9px, rgba(11, 11, 140, 0.5) 0 2px 0;}
+    to { background-color: rgb(44, 22, 188); }
+}
+@-ms-keyframes blinkBlue {
+    from { background-color: rgb(44, 22, 188);  }
+    100% { background-color: rgb(7, 11, 123); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #130d84 0 -1px 9px, rgba(11, 11, 140, 0.5)  0 2px 0;}
+    to { background-color: rgb(44, 22, 188); }
+}
+@-o-keyframes blinkBlue {
+    from { background-color: rgb(44, 22, 188); }
+    100% { background-color: rgb(7, 11, 123); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #130d84 0 -1px 9px, rgba(11, 11, 140, 0.5) 0 2px 0;}
+    to { background-color: rgb(44, 22, 188);  }
+}
+@keyframes blinkBlue {
+    from { background-color: rgb(44, 22, 188);  }
+    50% { background-color: rgb(7, 11, 123); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #130d84 0 -1px 9px, rgba(11, 11, 140, 0.5) 0 2px 0;}
+    to { background-color: rgb(44, 22, 188); }
+}
+    /*----------------------------------------------------- END LED BLINK ---------------------------------------------*/
+/* -------------------------------------------End Section Managers---------------------------------------------------- */
+
+
+/* -------------------------------------------Start Section Users----------------------------------------------------- */
+#Users{
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+}
+#Users .usersBorder{
+    color: #333;
+    text-align: center;
+    border: 3px solid #0196e3;
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0196e3;
+    margin: 0 auto;
+}
+
+#Users h1{
+    padding-top: 20px;
+    color: #333;
+    text-shadow: 2px 2px 2px #0e9fc7;
+    padding-left: 40px;
+}
+
+#Users .title{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    text-shadow: 2px 2px 2px #0e9fc7;
+}
+ 
+/*--------------------------------------------- Start Nhap INPUT----------------------------------------- */
+/* input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+} */
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*--------------------------------------------- END Nhap INPUT----------------------------------------- */
+#Users .menuBorder{
+    color: #333;
+    text-align: center;
+    border: 3px solid #0196e3;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0196e3;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* -------------------------------------------End Section Users----------------------------------------------------- */
+
+
+/* ------------------------------------------ START INFOMATION -------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0;400;0;700;1,300;1,400;1,700&display=swap');
+#About{
+    box-sizing: border-box;
+    font-family: 'Bellota Text', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 300px;
+}
+
+#About h1{
+    padding-top: 40px;
+    color: rgb(4, 47, 90);
+    text-shadow: 2px 2px 2px #0e9fc7;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    width: 330px;
+    height: 400px;
+    padding: 60px 30px;
+    margin: 20px;
+    background: #f2f3f7;
+    box-shadow: 0.6em 0.6em 1.2em #78a8e8,
+                -0.5em -0.5em 1em #ffffff;
+}
+
+.container .card .content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .card .content1 .imgBx{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    /* overflow: hidden; */
+}
+
+.container .card .content1 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content1 .contentBx h4{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .card .content1 .contentBx h5{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .card .content1 .sci{
+    margin-top: 20px;
+}
+
+.container .card .content1 .sci a{
+    text-decoration: none;
+    color: #6c758f;
+    font-size: 30px;
+    margin: 10px;
+    transition: color;
+}
+
+.container .card .content .sci a:hover{
+    color: #0196e3;
+}
+
+/* ------------------------------------------ START INFOMATION -------------------------------------------------------------------*/
